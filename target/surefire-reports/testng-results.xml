@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="49152" started-at="2018-06-17T09:40:44Z" finished-at="2018-06-17T09:41:33Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="49152" started-at="2018-06-17T09:40:44Z" finished-at="2018-06-17T09:41:33Z">
+      <class name="tests.TestExecution">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:tests.TestExecution@3f2a3a5]" name="startBrowser" is-config="true" duration-ms="11630" started-at="2018-06-17T11:40:44Z" finished-at="2018-06-17T11:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:tests.TestExecution@3f2a3a5]" name="invalidLogin" duration-ms="1385" started-at="2018-06-17T11:40:56Z" data-provider="invalidLogin" finished-at="2018-06-17T11:40:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Skywalker]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method status="PASS" signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:tests.TestExecution@3f2a3a5]" name="invalidLogin" duration-ms="417" started-at="2018-06-17T11:40:57Z" data-provider="invalidLogin" finished-at="2018-06-17T11:40:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Luke]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method status="PASS" signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:tests.TestExecution@3f2a3a5]" name="invalidLogin" duration-ms="493" started-at="2018-06-17T11:40:57Z" data-provider="invalidLogin" finished-at="2018-06-17T11:40:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Luke]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method status="PASS" signature="invalidLogin(java.lang.String, java.lang.String)[pri:0, instance:tests.TestExecution@3f2a3a5]" name="invalidLogin" duration-ms="586" started-at="2018-06-17T11:40:58Z" data-provider="invalidLogin" finished-at="2018-06-17T11:40:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Skywalker]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method status="PASS" signature="validLogin()[pri:1, instance:tests.TestExecution@3f2a3a5]" name="validLogin" duration-ms="467" started-at="2018-06-17T11:40:58Z" finished-at="2018-06-17T11:40:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="invalidCreateEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.TestExecution@3f2a3a5]" name="invalidCreateEmployee" duration-ms="7378" started-at="2018-06-17T11:40:59Z" data-provider="invalidCreateEmployee" finished-at="2018-06-17T11:41:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2018-01-01]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[a@b.cam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCreateEmployee -->
+        <test-method status="PASS" signature="invalidCreateEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.TestExecution@3f2a3a5]" name="invalidCreateEmployee" duration-ms="6621" started-at="2018-06-17T11:41:06Z" data-provider="invalidCreateEmployee" finished-at="2018-06-17T11:41:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2018-01-01]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[a@b.cam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCreateEmployee -->
+        <test-method status="PASS" signature="invalidCreateEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.TestExecution@3f2a3a5]" name="invalidCreateEmployee" duration-ms="6844" started-at="2018-06-17T11:41:13Z" data-provider="invalidCreateEmployee" finished-at="2018-06-17T11:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[a@b.cam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCreateEmployee -->
+        <test-method status="PASS" signature="invalidCreateEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.TestExecution@3f2a3a5]" name="invalidCreateEmployee" duration-ms="6767" started-at="2018-06-17T11:41:20Z" data-provider="invalidCreateEmployee" finished-at="2018-06-17T11:41:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2018-01-01]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ab.cam]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCreateEmployee -->
+        <test-method status="PASS" signature="createEmployee()[pri:3, instance:tests.TestExecution@3f2a3a5]" name="createEmployee" duration-ms="1725" started-at="2018-06-17T11:41:27Z" finished-at="2018-06-17T11:41:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEmployee -->
+        <test-method status="PASS" signature="updateEmployee()[pri:4, instance:tests.TestExecution@3f2a3a5]" name="updateEmployee" duration-ms="2938" started-at="2018-06-17T11:41:28Z" finished-at="2018-06-17T11:41:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployee -->
+        <test-method status="PASS" signature="deleteEmployee()[pri:5, instance:tests.TestExecution@3f2a3a5]" name="deleteEmployee" duration-ms="1610" started-at="2018-06-17T11:41:31Z" finished-at="2018-06-17T11:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployee -->
+        <test-method status="PASS" signature="correctLogout()[pri:6, instance:tests.TestExecution@3f2a3a5]" name="correctLogout" duration-ms="244" started-at="2018-06-17T11:41:33Z" finished-at="2018-06-17T11:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- correctLogout -->
+      </class> <!-- tests.TestExecution -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

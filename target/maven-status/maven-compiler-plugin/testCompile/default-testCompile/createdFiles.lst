@@ -1,0 +1,5 @@
+pageobjects\LoginPage.class
+tests\TestExecution.class
+pageobjects\CreatePage.class
+pageobjects\MainPage.class
+pageobjects\UpdatePage.class
