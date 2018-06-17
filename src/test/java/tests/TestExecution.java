@@ -5,16 +5,12 @@ import org.openqa.selenium.WebDriver;
 import java.util.concurrent.TimeUnit;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pageobjects.CreatePage;
 import pageobjects.LoginPage;
 import pageobjects.MainPage;
 import pageobjects.UpdatePage;
-
 
 public class TestExecution {
 
@@ -46,10 +42,11 @@ public class TestExecution {
     @Test(dataProvider = "invalidLogin",priority = 0)
     public void invalidLogin(String sUsername,String sPassword) throws InterruptedException {
 
+
         newLogin = new LoginPage(driver);
         newLogin.login(sUsername,sPassword);
         Assert.assertEquals(newLogin.getInvalidMessage(),"Invalid username or password!");
-
+        System.out.println("Invalid Login. Details Username ="+sUsername+" and Password = "+sPassword);
     }
 
     @Test (priority = 1)
@@ -58,7 +55,7 @@ public class TestExecution {
         newLogin = new LoginPage(driver);
         newLogin.login("Luke","Skywalker");
         Assert.assertEquals(newLogin.getGreeting(),"Hello Luke");
-
+        System.out.println("Logout successful.");
     }
 
     @DataProvider(name = "invalidCreateEmployee")
@@ -80,6 +77,7 @@ public class TestExecution {
         createPage.clickAdd();
         Thread.sleep(5000);
         Assert.assertTrue(createPage.errorCreate());
+        System.out.println("Invalid Create. Details First Name ="+fName+" and Last Name = "+lName+" Start Date = "+sDate+" Email = "+email);
         createPage.clickCancel();
     }
 
@@ -91,6 +89,7 @@ public class TestExecution {
         createPage.setDetails("Selenium","Test","2018-01-01","a@b.cam");
         createPage.clickAdd();
         Assert.assertTrue(createPage.confirmCreate());
+        System.out.println("Create Employee successful.");
 
     }
 
@@ -102,7 +101,7 @@ public class TestExecution {
         updatePage.setDetails("Selenium1","Test","2018-01-01","a@b.cam");
         updatePage.clickUpdate();
         Assert.assertTrue(updatePage.confirmCreate());
-
+        System.out.println("Update Employee successful.");
     }
 
     @Test (priority = 5)
@@ -111,10 +110,13 @@ public class TestExecution {
         mainPage.selectEmployee("Selenium");
         updatePage.clickDelete();
         Assert.assertTrue(updatePage.confirmCreate());
+        System.out.println("Delete Employee successful.");
     }
 
     @Test(priority = 6)
     public void correctLogout(){
+
         mainPage.logout();
+        System.out.println("Logout successful.");
     }
 }
