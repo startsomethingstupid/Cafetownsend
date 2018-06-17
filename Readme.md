@@ -11,7 +11,7 @@ Following test cases have been executed
 
 | Sr No  | Test Case Description |Result|
 | ------ | ------------- |--------------|
-| 1| Invalid Login - Incorrect Uusername, Correct Password|Passed|
+| 1| Invalid Login - Incorrect Username, Correct Password|Passed|
 | 2| Invalid Login - Correct Username, Incorrect Password|Passed|
 | 3| Invalid Login - Correct Username, Blank Password|Passed|
 | 4| Invalid Login - Blank Username, Correct Password|Passed|
@@ -34,12 +34,18 @@ __Step 1: Install Maven 3.0.3+__
 
 __Step 2: Ensure maven binaries are on your PATH (ie. you can run `mvn` from anywhere)__
 
-Follow the installation instructions from [here](http://maven.apache.org/download.html#Installation).
+Follow the installation instructions from [here](http://www.baeldung.com/install-maven-on-windows-linux-mac).
 
 
-Running Tests
------
+## Running Tests
+
 Run the following command in the root folder
 ```
 mvn test
 ``` 
+
+## Circle CI
+The above Project can also be built using Circle CI. The valid config file is available in .circleci
+
+## WebDriver Manager
+The [Webdriver](https://github.com/bonigarcia/webdrivermanager) is used to remove the dependency of requiring browser binar files for test execution.
