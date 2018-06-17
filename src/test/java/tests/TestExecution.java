@@ -29,7 +29,7 @@ public class TestExecution {
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://cafetownsend-angular-rails.herokuapp.com/login");
     }
