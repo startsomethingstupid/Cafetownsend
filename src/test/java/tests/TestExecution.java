@@ -55,7 +55,7 @@ public class TestExecution {
         newLogin = new LoginPage(driver);
         newLogin.login("Luke","Skywalker");
         Assert.assertEquals(newLogin.getGreeting(),"Hello Luke");
-        System.out.println("Logout successful.");
+        System.out.println("Login successful.");
     }
 
     @DataProvider(name = "invalidCreateEmployee")
