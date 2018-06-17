@@ -48,4 +48,4 @@ mvn test
 The above Project can also be built using Circle CI. The valid config file is available in .circleci
 
 ## WebDriver Manager
-The [Webdriver](https://github.com/bonigarcia/webdrivermanager) is used to remove the dependency of requiring browser binar files for test execution.
+The [Webdriver](https://github.com/bonigarcia/webdrivermanager) is used to remove the dependency of requiring browser binary files for test execution.
